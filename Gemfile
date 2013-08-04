@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+# Using Ruby 1.9.3
+ruby "1.9.3"
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
@@ -43,3 +46,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# For 'static asset serving and logging' according to heroku
+gem 'rails_12factor', group: :production
